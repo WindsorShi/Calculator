@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <form action="">
+            <table>
+                <tr>
+                    <td colspan="5">
+                        <input type="text" id="display" readonly="readonly">
+                    </td>
+                </tr>
+                <tbody id="calculateplate">
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" class="orange back" value="退格">
+                        </td>
+                        <td>
+                            <input type="button" class="orange clean" value="清屏">
+                        </td>
+                        <td>
+                            <input type="button" class="oper0 black" value="+/-">
+                        </td>
+                        <td>
+                            <input type="button" class="rec black" value="1/x">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="sin grey" value="sin">
+                        </td>
+                        <td>
+                            <input type="button" class="cos grey" value="cos">
+                        </td>
+                        <td>
+                            <input type="button" class="tan grey" value="tan">
+                        </td>
+                        <td>
+                            <input type="button" class="abs grey" value="abs">
+                        </td>
+                        <td>
+                            <input type="button" class="exp grey" value="exp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="num" value="7">
+                        </td>
+                        <td>
+                            <input type="button" class="num" value="8">
+                        </td>
+                        <td>
+                            <input type="button" class="num" value="9">
+                        </td>
+                        <td>
+                            <input type="button" class="oper grey" value="/">
+                        </td>
+                        <td>
+                            <input type="button" class="oper black" value="%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="num" value="4">
+                        </td>
+                        <td>
+                            <input type="button" class="num" value="5">
+                        </td>
+                        <td>
+                            <input type="button" class="num" value="6">
+                        </td>
+                        <td>
+                            <input type="button" class="oper grey" value="*">
+                        </td>
+                        <td>
+                            <input type="button" class="sqrt black" value="√">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="num" value="1">
+                        </td>
+                        <td>
+                            <input type="button" class="num" value="2">
+                        </td>
+                        <td>
+                            <input type="button" class="num" value="3">
+                        </td>
+                        <td>
+                            <input type="button" class="oper grey" value="-">
+                        </td>
+                        <td rowspan="2">
+                            <input type="button" class="black equal" value="=" onclick="calculate()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" class="num num0" value="0">
+                        </td>
+                        <td>
+                            <input type="button" class="num point" value=".">
+                        </td>
+                        <td>
+                            <input type="button" class="oper grey" value="+">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="text" id="exoper" style="display:none">
+            <input type="text" id="text" style="display:none">
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
